@@ -5,7 +5,7 @@ export default function Layout({ children }) {
       <header className='bg-slate-200 mb-8 py-4 fixed top-0 left-0 right-0'>
         <div className='container mx-auto flex justify-center'>
           <Link className='mx-auto flex' href='/'>
-            <img src="images/k8s.png" width={30}/>            
+            <Image src="images/k8s.png" width={30}/>            
             <b style={{fontSize: 20, marginLeft: 10}}>
                 K8S Translation
             </b>
