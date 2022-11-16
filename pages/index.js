@@ -23,7 +23,7 @@ export default function Home({ posts }) {
       </div>
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0' style={{marginTop: '20px'}}>
         {posts
-        .filter(({ frontmatter }) => frontmatter.lecture.includes(Search))
+        .filter(({ frontmatter }) => frontmatter.lecture.toString().includes(Search))
         .map(({ slug, frontmatter }) => (
           <div
             key={slug}
